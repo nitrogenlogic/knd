@@ -134,7 +134,9 @@ using the `nl_parse_kvp()` function from [libnlutils][0].  Quoted strings may
 be processed using the `nl_unescape_string()` function from [libnlutils][0].
 
 Dimensions for the `addzone` and `subzone` commands are in millimeters relative
-to the depth sensor itself.
+to the depth sensor itself.  When looking at the front of the depth sensor,
+positive X points to the right, positive Y points upward toward the ceiling,
+and positive Z points away from the sensor toward the room.
 
 - **bye**
   ```
