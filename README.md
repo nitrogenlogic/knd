@@ -84,13 +84,17 @@ mkdir $HOME/.knd/
 KND_SAVEDIR=$HOME/.knd/ ./build-$(uname -m)/src/knd
 ```
 
-On an original Nitrogen Logic Depth Camera Controller, `knd` is run by
-`knd_monitor.sh`, started by a line in `/etc/inittab`.  This line is added by
-the post-firmware-update script in the `knc` project.
-
 If there is no Kinect camera present, if the current user doesn't have
 permission to access it, or if the camera takes too long to initialize, `knd`
 will not start and an error will be displayed.
+
+On an original Nitrogen Logic Depth Camera Controller, `knd` is run by
+`knd_monitor.sh`, started by a line in `/etc/inittab`.  This line is added by
+the post-firmware-update script in the `knc` project.  `knd_monitor.sh` makes
+sure the V4L driver for the Kinect is not loaded, then runs `knd` in a loop.
+`knd` is designed to exit when anything goes wrong, so this loop recovers from
+errors (such as a Kinect being unplugged and plugged back in) and keeps `knd`
+running.
 
 
 # API
