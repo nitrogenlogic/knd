@@ -19,7 +19,4 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -I${LIBFREENECT_INCLUDE_DIR} --std=gnu99 -D_
 
 add_subdirectory(src)
 
-if(NL_EMBEDDED)
-	message("Embedded build; including embedded/ directory")
-	add_subdirectory(embedded)
-endif(NL_EMBEDDED)
+add_subdirectory(embedded)
