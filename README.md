@@ -4,7 +4,7 @@ The Kinematic Network Daemon from Nitrogen Logic's [Depth Camera
 Controller][3].  This application runs in the background to provide a
 convenient interface for a Kinect camera or similar depth sensor supported by
 libfreenect.  KND has all the core graphics processing code, written in C,
-while the KNC project provides the web UI, written in Ruby.
+while the [KNC][7] project provides the web UI, written in Ruby.
 
 The sensor's visible area can be divided into 3D zones with specified
 dimensions, with `knd` reporting information about objects within each zone.
@@ -264,3 +264,4 @@ and positive Z points away from the sensor toward the room.
 [4]: http://www.nitrogenlogic.com/products/automation_controller.html
 [5]: http://www.nitrogenlogic.com/products/pc_remote.html
 [6]: https://www.gnu.org/licenses/agpl-3.0.html
+[7]: https://github.com/nitrogenlogic/knc
