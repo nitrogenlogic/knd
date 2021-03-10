@@ -73,7 +73,9 @@ You'll need to cross-compile [nlutils][0] and [Nitrogen Logic's fork of libfreen
 ```
 
 You can also cross-build Debian packages, using the aforementioned packaging
-tools from nlutils:
+tools from nlutils.  This will require some luck -- as of my last test, one of
+checkinstall/make/cmake/qemu was segfaulting when trying to build an armel
+package using checkinstall.
 
 ```bash
 # In nlutils
