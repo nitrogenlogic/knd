@@ -3,13 +3,19 @@
 # Copyright (C)2015 Mike Bourgeous.  Relased under AGPLv3 in 2018.
 
 # Debian architecture name
-ARCH=${ARCH:-i386}
+ARCH=${ARCH:-armel}
 
 # Debian release name
-RELEASE=squeeze
+RELEASE=buster
 
 # Project directory
 BASEDIR="$(readlink -m "$(dirname "$0")/..")"
+
+EXTRA_PACKAGES="\
+libfreenect-dev,
+libevent-dev,
+libusb-1.0-0-dev
+"
 
 
 if [ -r /usr/local/share/nlutils/build_root_helper.sh ]; then

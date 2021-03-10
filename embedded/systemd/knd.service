@@ -1,0 +1,14 @@
+[Unit]
+Description=Nitrogen Logic Depth Controller Driver
+After=network.target
+Before=getty.target
+
+[Service]
+# TODO: don't use openvt (classical Nitrogen Logic controllers used inittab and
+# separate VTs for each service, then dumped VT contents to display recent
+# logs)
+ExecStart=/bin/openvt -f -w -c 3 -- /opt/nitrogenlogic/knd/knd_monitor.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

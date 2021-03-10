@@ -1,4 +1,4 @@
-set(KND_VERSION 0.1.0)
+set(KND_VERSION 1.0.0)
 
 cmake_minimum_required(VERSION 2.6)
 
@@ -19,7 +19,4 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -I${LIBFREENECT_INCLUDE_DIR} --std=gnu99 -D_
 
 add_subdirectory(src)
 
-if(NL_EMBEDDED)
-	message("Embedded build; including embedded/ directory")
-	add_subdirectory(embedded)
-endif(NL_EMBEDDED)
+add_subdirectory(embedded)

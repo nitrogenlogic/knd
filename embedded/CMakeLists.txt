@@ -7,4 +7,7 @@ install(PROGRAMS knd_monitor.sh
 install(FILES knd.conf
 	DESTINATION "${INSTALLDIR}/etc/nitrogenlogic/knd/")
 
+install(DIRECTORY systemd/
+	DESTINATION "${INSTALLDIR}/etc/systemd/system/")
+
 install(DIRECTORY DESTINATION "${INSTALLDIR}/var/lib/knd/")

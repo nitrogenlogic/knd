@@ -6,6 +6,7 @@
 NAME="knd"
 PKGNAME="knd"
 DESCRIPTION="Kinematic Network Daemon (core depth sensor service for Nitrogen Logic controllers)"
+PKGDEPS="libnlutils, libfreenect0.5, libevent-2.1-6, libusb-1.0-0"
 
 # Build vars
 BASEDIR="$(readlink -m "$(dirname "$0")/..")"
