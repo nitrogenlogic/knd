@@ -11,6 +11,12 @@ RELEASE=buster
 # Project directory
 BASEDIR="$(readlink -m "$(dirname "$0")/..")"
 
+EXTRA_PACKAGES="\
+libfreenect-dev,
+libevent-dev,
+libusb-1.0-0-dev
+"
+
 
 if [ -r /usr/local/share/nlutils/build_root_helper.sh ]; then
 	. /usr/local/share/nlutils/build_root_helper.sh
