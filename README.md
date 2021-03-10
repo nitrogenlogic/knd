@@ -72,6 +72,17 @@ You'll need to cross-compile [nlutils][0] and [Nitrogen Logic's fork of libfreen
 ./crosscompile.sh nofp
 ```
 
+You can also cross-build Debian packages, using the aforementioned packaging
+tools from nlutils:
+
+```bash
+# In nlutils
+meta/make_root.sh
+
+# In knd
+meta/cross_pkg.sh
+```
+
 
 # Running
 
