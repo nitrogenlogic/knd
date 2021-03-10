@@ -22,7 +22,7 @@ without floating point processors.
 
 # Copying
 
-Copyright 2011-2018 Mike Bourgeous, licensed under [GNU Affero GPLv3][0].  See
+Copyright 2011-2018 Mike Bourgeous, licensed under [GNU Affero GPLv3][6].  See
 LICENSE for the complete text of the license.
 
 Why AGPLv3?  Because this code is being released for historical preservation
@@ -250,3 +250,4 @@ and positive Z points away from the sensor toward the room.
 [3]: http://www.nitrogenlogic.com/products/depth_controller.html
 [4]: http://www.nitrogenlogic.com/products/automation_controller.html
 [5]: http://www.nitrogenlogic.com/products/pc_remote.html
+[6]: https://www.gnu.org/licenses/agpl-3.0.html
